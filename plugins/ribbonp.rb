@@ -3,20 +3,26 @@
 # Output a p block with pure css ribbon
 #
 require './plugins/titlecase.rb'
+
 module Jekyll
-  RibbonStyle = /\A(warning|info)\z/
+  RibbonStyleFull = /\A(warning|info)\s+(.+)/i
+  RibbonStyle = /\A(warning|info)/i
+
   class Ribbonp < Liquid::Block
     @class=:info
     def initialize(tag_name, markup, tokens)
-      if markup =~ RibbonStyle
+      if markup =~ RibbonStyleFull
         @class = $1
+        @title = $2.titlecase
+      elsif markup =~ RibbonStyleFull
+        @title = @class = $1.titlecase
       end
       super
     end
 
     def render(context)
       content = paragraphize(super)
-      "<p class='info #{@class}'>#{content}</p>"
+      "<p class='info #{@class}' data-title='#{@title}'>#{content}</p>"
     end
 
     def paragraphize(input)

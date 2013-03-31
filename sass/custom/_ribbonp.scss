@@ -16,8 +16,8 @@ $light-blue:#A5DEE4;
 $red:#DB4D6D;
 $dark-red:#9F353A;
 $light-red:#F4A7B9;
-$info-content: "Info";
-$warning-content: "Warning";
+$info-content: attr(data-title);
+$warning-content: attr(data-title);
 $block-padding: 2em 2em 1em;
 
 p.info {
