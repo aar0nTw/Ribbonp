@@ -3,8 +3,15 @@ Ribbonp
 
 A Octopress plugin to output p block with pure css ribbon.
 
+Requirement
+=======
+
+Octopress 2.0
+
 How to Use
 =======
+Put all to your octopress folder, and use it in your article like this:
+
 ```
 {%ribbonp (info|warning) <custom title>%}
 Woooo Ribbon P
