@@ -15,7 +15,8 @@ Octopress 2.0
 
 How to Use
 =======
-Put all to your octopress folder, and use it in your article like this:
+Put all to your octopress folder, import the custom scss file to your main style file, 
+and use it in your article like this:
 
 ```
 {%ribbonp (info|warning) <custom title>%}
