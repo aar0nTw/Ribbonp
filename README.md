@@ -6,7 +6,7 @@ A Octopress plugin to output p block with pure css ribbon.
 How to Use
 =======
 ```
-{%ribbonp (info|warning)%}
+{%ribbonp (info|warning) <custom title>%}
 Woooo Ribbon P
 {%endribbonp%}
 ```
