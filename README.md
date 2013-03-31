@@ -1,6 +1,10 @@
-Ribbonp
-=======
+<pre>
+ ___   __  ___  ___   __  _  _  ___ 
+(  ,) (  )(  ,)(  ,) /  \( \( )(  ,\
+ )  \  )(  ) ,\ ) ,\( () ))  (  ) _/
+(_)\_)(__)(___/(___/ \__/(_)\_)(_)   
 
+</pre>
 A Octopress plugin to output p block with pure css ribbon.
 
 Requirement
