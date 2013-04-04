@@ -1,5 +1,10 @@
-Ribbonp
-=======
+```
+   ___  _ __   __             ___      __  ____      __                     
+  / _ \(_) /  / /  ___  ___  / _ \   _/_/ / __ \____/ /____  _______ ___ ___
+ / , _/ / _ \/ _ \/ _ \/ _ \/ ___/ _/_/  / /_/ / __/ __/ _ \/ __/ -_|_-<(_-<
+/_/|_/_/_.__/_.__/\___/_//_/_/    /_/    \____/\__/\__/ .__/_/  \__/___/___/
+                                                     /_/                    
+```
 
 A Octopress plugin to output p block with pure css ribbon.
 
@@ -10,7 +15,8 @@ Octopress 2.0
 
 How to Use
 =======
-Put all to your octopress folder, and use it in your article like this:
+Put all to your octopress folder, import the custom scss file to your main style file, 
+and use it in your article like this:
 
 ```
 {%ribbonp (info|warning) <custom title>%}
