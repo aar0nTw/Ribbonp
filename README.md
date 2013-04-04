@@ -11,7 +11,7 @@ A Octopress plugin to output p block with pure css ribbon.
 Requirement
 =======
 
-Octopress 2.0
+Octopress 2.0 w/ Liquid ~> 2.3.0
 
 How to Use
 =======
