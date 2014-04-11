@@ -18,13 +18,13 @@ $dark-red:#9F353A;
 $light-red:#F4A7B9;
 $info-content: attr(data-title);
 $warning-content: attr(data-title);
-$block-padding: 2em 2em 1em;
+$block-padding: 32px 32px 16px;
 
 p.info {
     position: relative;
     background: $light-blue;
     padding: $block-padding;
-    margin: 1em auto;
+    margin: 16px auto;
     z-index:9;
     font-size: 13pt;
     &:before {
@@ -34,20 +34,22 @@ p.info {
         background: $blue;
         display: block;
         position: absolute;
-        top: -.5em;
-        left: -1em;
-        padding: .5em 2em .5em;
+        top: -8px;
+        left: -16px;
+        padding: 8px 32px;
+        line-height: 24px;
+        min-height: 24px;
     }
     &:after{
         font-size: 12pt;
         content: " ";
         display: block;
         position: absolute;
-        border: .5em solid transparent;
+        border: 8px solid transparent;
         border-top-color: $dark-blue;
         border-right-color: $dark-blue;
-        top: 2em;
-        left: -1em;
+        top: 32px;
+        left: -16px;
         z-index: -999;
     }
 
